@@ -1,0 +1,35 @@
+import numpy as np
+
+a = np.random.randint(1,20,(5,5))
+a
+output :
+        array([[ 6,  9, 10, 12,  4],
+                [16, 10, 11,  2, 12],
+                [ 3,  2, 10,  7,  4],
+                [15, 19, 16, 19, 11],
+                [11,  6, 11, 13,  2]])
+a.shape # to know how many rows and coloumns are present in an array
+
+(5, 5)
+       
+a[(0,2),3:] # slicing for rows and coloumns
+
+array([[12,  4],
+       [ 7,  4]])
+              
+a[2:] 
+
+array([[ 3,  2, 10,  7,  4],
+       [15, 19, 16, 19, 11],
+       [11,  6, 11, 13,  2]])
+
+a[(0,2),] # for random rows
+
+array([[ 6,  9, 10, 12,  4],
+       [ 3,  2, 10,  7,  4]])
+
+a[::2] # steping by 2 in a given array
+
+array([[ 6,  9, 10, 12,  4],
+       [ 3,  2, 10,  7,  4],
+       [11,  6, 11, 13,  2]])
